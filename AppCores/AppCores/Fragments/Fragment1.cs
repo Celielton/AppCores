@@ -36,6 +36,7 @@ namespace AppCores.Fragments
         private void BtnVermelho_Click(object sender, System.EventArgs e)
         {
             var btn = sender as Button;
+
             btn.SetBackgroundColor(Android.Graphics.Color.White);
         }
 
