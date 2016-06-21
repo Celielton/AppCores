@@ -10,13 +10,14 @@ using AppCores.Fragments;
 using Android.Support.V7.App;
 using Android.Support.V4.View;
 using Android.Support.Design.Widget;
+using System.Collections.Generic;
+using Android.Content;
 
 namespace AppCores.Activities
 {
     [Activity(Label = "Home", MainLauncher = true, LaunchMode = LaunchMode.SingleTop, Icon = "@drawable/Icon")]
     public class MainActivity : BaseActivity
     {
-
         DrawerLayout drawerLayout;
         NavigationView navigationView;
 
@@ -52,7 +53,10 @@ namespace AppCores.Activities
                         ListItemClicked(0);
                         break;
                     case Resource.Id.nav_home_2:
-                        ListItemClicked(1);
+                        //ListItemClicked(1);
+                        var intent = new Intent(this, typeof(ListaFake));
+                        intent.PutStringArrayListExtra("phone_numbers", new List<string> {"teste 1 ", "teste 2 " });
+                        StartActivity(intent);
                         break;
                 }
 

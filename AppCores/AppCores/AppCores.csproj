@@ -79,6 +79,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Activities\ListaFake.cs" />
     <Compile Include="Activities\MainActivity.cs" />
     <Compile Include="Fragments\Fragment1.cs" />
     <Compile Include="Fragments\Fragment2.cs" />
@@ -97,6 +98,9 @@
     <AndroidResource Include="Resources\layout\fragment2.axml" />
     <AndroidResource Include="Resources\layout\main.axml" />
     <AndroidResource Include="Resources\layout\nav_header.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ListaFake.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
   </ItemGroup>
