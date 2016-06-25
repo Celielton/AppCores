@@ -54,8 +54,11 @@ namespace AppCores.Activities
                         break;
                     case Resource.Id.nav_home_2:
                         //ListItemClicked(1);
-                        var intent = new Intent(this, typeof(ListaFake));
-                        intent.PutStringArrayListExtra("phone_numbers", new List<string> {"teste 1 ", "teste 2 " });
+                        //var intent = new Intent(this, typeof(ListaFake));
+                        //intent.PutStringArrayListExtra("phone_numbers", new List<string> {"teste 1 ", "teste 2 " });
+                        //StartActivity(intent);
+                        var intent = new Intent(this, typeof(ListaGrid));
+                      //  intent.PutStringArrayListExtra("phone_numbers", new List<string> { "teste 1 ", "teste 2 " });
                         StartActivity(intent);
                         break;
                 }

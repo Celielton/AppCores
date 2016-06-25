@@ -38,6 +38,8 @@ namespace AppCores.Fragments
             var btn = sender as Button;
 
             btn.SetBackgroundColor(Android.Graphics.Color.White);
+
+            
         }
 
     }
